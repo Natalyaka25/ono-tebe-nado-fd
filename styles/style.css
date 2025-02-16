@@ -30,7 +30,7 @@ header__address — для выравнивания блока с адресом
   padding-right: 52.5px;
   padding-left: 50px;
   background-color: #fff;
- }
+}
 
 .header_menu {
   width: 391.5px;
@@ -40,23 +40,23 @@ header__address — для выравнивания блока с адресом
 
 .header__links-list {
   display: flex;
-  flex-wrap: nowrap;  
-  gap: 33px; 
-  list-style: circle; 
+  flex-wrap: nowrap;
+  gap: 33px;
+  list-style: circle;
 }
 
 .header__links-list-item_no-bullit {
-    list-style: none;
+  list-style: none;
 }
 
 .header__link {
   border-bottom: 1px solid;
-  text-decoration: none;  
+  text-decoration: none;
 }
 
 .header__logo {
   justify-self: center;
-  width: 134px; 
+  width: 134px;
 }
 
 .header__address {
@@ -67,10 +67,10 @@ header__address — для выравнивания блока с адресом
   gap: 1.3px;
   width: 236px;
   font-size: 18px;
-  line-height: 1.35;  
+  line-height: 1.35;
 }
 
-.address a{
+.address a {
   border-bottom: 1px solid #000;
   font-style: normal;
   line-height: 1.35;
@@ -95,15 +95,15 @@ header__address — для выравнивания блока с адресом
 .cover__title {
   position: relative;
   z-index: 1;
-  height: 385px;  
+  height: 385px;
   font-family: "Raleway", sans-serif;
   font-size: 100px;
   line-height: 1.15;
   letter-spacing: 0.3em;
 }
 
-.aligned-text {  
-  display: block; 
+.aligned-text {
+  display: block;
 }
 
 .aligned-text_center {
@@ -119,7 +119,7 @@ header__address — для выравнивания блока с адресом
 }
 
 .no-letter-spacing {
-   margin-right: -0.3em;
+  margin-right: -0.3em;
 }
 
 .content-img {
@@ -128,7 +128,7 @@ header__address — для выравнивания блока с адресом
   height: 100%;
   object-fit: cover;
 }
-  
+
 .description {
   position: relative;
   top: 106px;
@@ -143,11 +143,11 @@ header__address — для выравнивания блока с адресом
   font-weight: normal;
   font-size: 22px;
   text-transform: uppercase;
-  word-spacing:18px;
+  word-spacing: 18px;
 }
 
 .bet-button {
-  width: 256px; 
+  width: 256px;
   height: 51px;
   border: 1px solid #fff;
   color: #fff;
@@ -157,7 +157,7 @@ header__address — для выравнивания блока с адресом
   background-color: transparent;
 }
 
-.overlay { 
+.overlay {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -178,15 +178,15 @@ card__title — заголовок карточки;
 card__text — текст карточки;
 lots__look-more-link — ссылка «Посмотреть больше».*/
 
-.lots { 
+.lots {
   min-height: 723px;
-  padding: 180px 24px 120px; 
+  padding: 180px 24px 120px;
 }
 
 .lots__heading {
   margin-bottom: 27px;
   margin-left: 40px;
-  font-family: "Raleway", sans-serif;;
+  font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 40px;
   text-transform: uppercase;
@@ -194,8 +194,8 @@ lots__look-more-link — ссылка «Посмотреть больше».*/
 
 .lots__card-list {
   display: flex;
-  flex-wrap:wrap;
-  gap:25px;
+  flex-wrap: wrap;
+  gap: 25px;
   list-style: none;
 }
 
@@ -205,13 +205,12 @@ lots__look-more-link — ссылка «Посмотреть больше».*/
   height: 596px;
 }
 
-.card_type_film , 
-.card_type_book, 
-.card_type_picture
-{
-   height: 596px;
-   object-fit: cover;
-   background-size: contain;
+.card_type_film,
+.card_type_book,
+.card_type_picture {
+  height: 596px;
+  object-fit: cover;
+  background-size: contain;
 }
 
 .card__title {
@@ -224,14 +223,14 @@ lots__look-more-link — ссылка «Посмотреть больше».*/
   text-transform: uppercase;
 }
 
-.card__text{
+.card__text {
   position: absolute;
   right: 40px;
   bottom: 48px;
   left: 40px;
   z-index: 1;
   font-size: 20px;
-  line-height: 1,2;
+  line-height: 1, 2;
 }
 
 .lots__look-more-link {
@@ -260,7 +259,7 @@ about__text — блок для текстов (параграфов) секци
   grid-template-rows: repeat(3, 1fr);
   gap: 25px;
   min-height: 595px;
-  padding: 0px 24px; 
+  padding: 0px 24px;
   background-color: #fff;
 }
 
@@ -268,14 +267,14 @@ about__text — блок для текстов (параграфов) секци
   position: relative;
   grid-row: 1/3;
   justify-self: center;
-  width: 240px ;
+  width: 240px;
   height: 240px;
-  border-radius: 120px 120px; 
+  border-radius: 120px 120px;
   background-color: #000;
 }
 
 .about__title {
-  grid-column: 2/span 2; 
+  grid-column: 2 / span 2;
   margin-top: 106px;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
@@ -284,8 +283,8 @@ about__text — блок для текстов (параграфов) секци
 }
 
 .about__text {
-  grid-column: 2/span 2;
-  grid-row: 2/span 2;
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 2;
   align-content: start;
   font-family: "Raleway", sans-serif;
   font-weight: normal;
@@ -293,7 +292,8 @@ about__text — блок для текстов (параграфов) секци
   line-height: 1.2;
 }
 
- .about__text p, .about__text{ 
+.about__text p,
+.about__text {
   width: 688px;
   margin-top: 24px;
 }
@@ -301,8 +301,8 @@ about__text — блок для текстов (параграфов) секци
 .about__logo-image {
   position: absolute;
   inset: 64px 45.5px;
-  width:148px;
-  height:114px;   
+  width: 148px;
+  height: 114px;
 }
 
 /*--------------------------------Подвал------------------------------------------------------*/
@@ -323,17 +323,17 @@ footer__social-icon — иконка социальной сети.
 .footer {
   display: grid;
   grid-template-columns: 1fr 164px 1fr;
-  gap:100px;
+  gap: 100px;
   height: 360px;
   padding: 151.5px 50px 82px 51px;
-  background-color: #fff;  
+  background-color: #fff;
 }
 
 .footer__address {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  font-size: 18px;   
+  font-size: 18px;
 }
 
 .footer__menu-list {
@@ -342,9 +342,9 @@ footer__social-icon — иконка социальной сети.
   list-style: none;
 }
 
-.footer__menu-link{
+.footer__menu-link {
   display: flex;
-  justify-content: center;  
+  justify-content: center;
 }
 
 .footer__menu-link_active {
@@ -354,7 +354,7 @@ footer__social-icon — иконка социальной сети.
 .footer__social-list {
   display: flex;
   justify-content: right;
-  gap:48px;
+  gap: 48px;
   list-style: none;
 }
 
