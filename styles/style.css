@@ -159,6 +159,7 @@ header__address — для выравнивания блока с адресом
 .overlay {
   position: absolute;
   inset: 0;
+  width: 100%;
   opacity: 0.6;
   background-color: #000;
 }
@@ -178,7 +179,7 @@ lots__look-more-link — ссылка «Посмотреть больше».*/
 
 
 .lots { 
-  padding: 180px 24px 120px; 
+  padding: 180px 24px 118px; 
 }
 
 .lots__heading {
@@ -285,46 +286,47 @@ about__text — блок для текстов (параграфов) секци
 
 .about {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 25px;
-  min-height: 595px;
-  padding: 0px 24px;
+  grid-template-columns: 334px 1fr;
+  column-gap: 25px ;
+  padding:35px 24px 0px;
   background-color: #fff;
 }
 
 .about__logo {
   position: relative;
-  grid-row: 1/3;
+  grid-row: 1;
   justify-self: center;
-  width: 240px;
+  align-self: start;
+  width: 240px; 
   height: 240px;
+  background-size: contain;
   border-radius: 120px 120px;
   background-color: #000;
 }
 
 .about__title {
-  grid-column: 2 / span 2;
-  margin-top: 106px;
+  padding-top: 101px;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 40px;
   text-transform: uppercase;
+  justify-self: start;
+  align-self: center;
+  margin-bottom: 75px;
 }
 
 .about__text {
-  grid-column: 2 / span 2;
-  grid-row: 2 / span 2;
-  align-content: start;
+  align-content: start ; 
+  padding-right: 24px;
   font-family: "Raleway", sans-serif;
   font-weight: normal;
   font-size: 20px;
   line-height: 1.2;
+  background-size: contain;
+ 
 }
 
-.about__text p,
-.about__text {
-  width: 688px;
+.about__text p{
   margin-top: 24px;
 }
 
@@ -355,11 +357,12 @@ footer__social-icon — иконка социальной сети.
   grid-template-columns: 1fr 164px 1fr;
   gap: 100px;
   height: 360px;
-  padding: 151.5px 50px 82px 51px;
+  padding: 180px 50px 82px 51px;
   background-color: #fff;
 }
 
 .footer__menu-list {
+  
   font-size: 18px;
   text-align: center;
   list-style: none;
