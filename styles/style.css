@@ -211,6 +211,7 @@ lots__look-more-link — ссылка «Посмотреть больше».*/
   gap: 25px; 
   height: 100%;
   width: 100%;  
+  flex-wrap: wrap;
 }
 
 
@@ -222,6 +223,7 @@ lots__look-more-link — ссылка «Посмотреть больше».*/
   height: 100%;
   justify-content: space-between;  
   padding: 48px 40px;
+  
 
 }
 
