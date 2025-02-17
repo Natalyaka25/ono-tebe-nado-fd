@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/style.css" />
-  </head> 
-  
+  </head>
+
   <body>
-    <header class="header content_text_black">
-      <nav class="header_menu">
+    <header class="header content__text_black">
+      <nav class="header__menu">
         <ul class="header__links-list">
           <li class="header__links-list-item header__links-list-item_no-bullit">
             <a class="header__link_active">главная</a>
@@ -32,17 +32,17 @@
           alt="Логотип Оно тебе надо"
         />
       </a>
-      <div class="header__address">
-        <address class="address">
+      <div class="address">
+        <address>
           <a href="tel:+70000000">+9 999 555 5555</a> <br />
           <a href="mailto:mail@example.com">info@sobaka.ge</a>
+          <p>наб. Принсенграхт 263- 265, Амстердам</p>
         </address>
-        <p>наб. Принсенграхт 263- 265, Амстердам</p>
       </div>
     </header>
     <main class="main">
       <!-----------------------Секция с заголовком-------------------------------------->
-      <section class="cover content_text_white">
+      <section class="cover content__text_white">
         <div>
           <h1 class="cover__title">
             <span class="aligned-text">ОНО</span>
@@ -70,66 +70,71 @@
       </section>
       <!-----------------------Секция с карточками--------------------------------------->
       <section class="lots">
-        <h3 class="lots__heading">Лоты</h3>
-        <ul class="lots__card-list content_text_white">
+        <h2 class="lots__heading">Лоты</h2>
+        <ul class="lots__card-list content__text_white">
           <li class="lots__card-list-item">
-            <article class="card">
-              <h4 class="card__title">
-                Фильм режиссёра, который бросил киношколу
-              </h4>
-              <p class="card__text">
-                Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
-                ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-              </p>
-              <a class="card-link" href="#0">
+            <a class="card-link" href="#0">
+              <article class="card">
+                <h3 class="card__title ">
+                  Фильм режиссёра, который бросил киношколу
+                </h3>
+                <p class="card__text">
+                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша
+                  ставка, если бы вы не знали, что режиссёр — Пол Томас
+                  Андерсон?
+                </p>
                 <img
                   class="card_type_film"
                   src="./images/card-lot-01.jpg"
                   alt="Фильм"
                 />
-              </a>
-              <div class="overlay"></div>
-            </article>
+                <div class="overlay"></div>
+              </article>
+            </a>
           </li>
           <li class="lots__card-list-item">
-            <article class="card">
-              <h4 class="card__title">
-                Книга, где описан один скучный день из жизни рекламного агента
-              </h4>
-              <p class="card__text">
-                Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
-                переходами на древнеанглийский. В ней одновременно
-                рассказывается о 16 июня 1904 года и об истории литературы,
-                начиная с античных времён. И это всё накладывается на эпическую
-                поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса
-                Джойса?
-              </p>
-              <img
-                class="card_type_book"
-                src="./images/card-lot-02.jpg"
-                alt="Книга"
-              />
-              <div class="overlay"></div>
-            </article>
+            <a class="card-link" href="#0">
+              <article class="card">
+                <h3 class="card__title">
+                  Книга, где описан один скучный день из жизни рекламного агента
+                </h3>
+                <p class="card__text">
+                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и
+                  с переходами на древнеанглийский. В ней одновременно
+                  рассказывается о 16 июня 1904 года и об истории литературы,
+                  начиная с античных времён. И это всё накладывается на
+                  эпическую поэму Гомера. Сколько бы вы поставили на «Улисса»
+                  Джеймса Джойса?
+                </p>
+                <img
+                  class="card_type_book"
+                  src="./images/card-lot-02.jpg"
+                  alt="Книга"
+                />
+                <div class="overlay"></div>
+              </article>
+            </a>
           </li>
           <li class="lots__card-list-item">
-            <article class="card">
-              <h4 class="card__title">
-                Картина, которую повторит даже 5-летний сын маминой подруги
-              </h4>
-              <p class="card__text">
-                Ну действительно, там линия, тут кружочек, а здесь и вовсе
-                что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
-                котиков... Сколько бы вы на такое поставили, если бы не знали,
-                что это — одна из революционных работ Кандинского?
-              </p>
-              <img
-                class="card_type_picture"
-                src="./images/card-lot-03.jpg"
-                alt="Картина"
-              />
-              <div class="overlay"></div>
-            </article>
+            <a class="card-link" href="#0">
+              <article class="card">
+                <h3 class="card__title">
+                  Картина, которую повторит даже 5-летний сын маминой подруги
+                </h3>
+                <p class="card__text">
+                  Ну действительно, там линия, тут кружочек, а здесь и вовсе
+                  что-то похожее на инфузорию-туфельку. Никаких полей, лесов,
+                  котиков... Сколько бы вы на такое поставили, если бы не знали,
+                  что это — одна из революционных работ Кандинского?
+                </p>
+                <img
+                  class="card_type_picture"
+                  src="./images/card-lot-03.jpg"
+                  alt="Картина"
+                />
+                <div class="overlay"></div>
+              </article>
+            </a>
           </li>
         </ul>
         <a class="lots__look-more-link" href="#0">посмотреть больше</a>
@@ -165,12 +170,12 @@
     </main>
     <!-----------------------Подвал----------------------------------------------->
     <footer class="footer">
-      <div class="footer__address">
-        <address class="address">
-          <a href="tel:+70000000">+9 999 555 5555</a> <br/>
+      <div class="address">
+        <address>
+          <a href="tel:+70000000">+9 999 555 5555</a> <br />
           <a href="mailto:mail@example.com">info@sobaka.ge</a>
+          <p>наб. Принсенграхт 263- 265, Амстердам</p>
         </address>
-        <p>наб. Принсенграхт 263- 265, Амстердам</p>
       </div>
       <nav class="footer__menu">
         <ul class="footer__menu-list">

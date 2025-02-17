@@ -1,10 +1,10 @@
 /* место для вашего кода */
 
-.content_text_white {
+.content__text_white {
   color: #fff;
 }
 
-.content_text_black {
+.content__text_black {
   color: #000;
 }
 /*----------------------------------------------Шапка------------------------------------------------------------*/
@@ -26,14 +26,11 @@ header__address — для выравнивания блока с адресом
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  height: 293px;
-  padding-right: 52.5px;
-  padding-left: 50px;
+  padding: 93.16px 52.5px 95.19px 50px;
   background-color: #fff;
 }
 
-.header_menu {
-  width: 391.5px;
+.header__menu {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
 }
@@ -59,22 +56,25 @@ header__address — для выравнивания блока с адресом
   width: 134px;
 }
 
-.header__address {
+.address {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-self: end;
-  gap: 1.3px;
-  width: 236px;
+  font-style: normal;
   font-size: 18px;
   line-height: 1.35;
+  width: 236px;
+}
+
+.address p {
+  font-style: normal;  
 }
 
 .address a {
-  border-bottom: 1px solid #000;
-  font-style: normal;
-  line-height: 1.35;
   text-decoration: none;
+  font-style: normal;
+  border-bottom: 1px solid #000;  
 }
 
 /*-----------------------------Основной блок---------------------------------------------------------*/
@@ -88,14 +88,13 @@ header__address — для выравнивания блока с адресом
 
 .cover {
   position: relative;
-  height: 757px;
+  min-height: 757px;
   padding: 165px 50px 50px;
 }
 
 .cover__title {
   position: relative;
   z-index: 1;
-  height: 385px;
   font-family: "Raleway", sans-serif;
   font-size: 100px;
   line-height: 1.15;
@@ -130,12 +129,14 @@ header__address — для выравнивания блока с адресом
 }
 
 .description {
+  display: grid;
   position: relative;
-  top: 106px;
-  z-index: 1;
-  display: flex;
-  justify-content: space-between;
+  grid-template-columns:max-content 1fr;
+  align-content:center;
   align-items: center;
+  margin-top: 105px;
+  gap: 110px;
+  z-index: 1;
 }
 
 .cover__description-text {
@@ -147,20 +148,17 @@ header__address — для выравнивания блока с адресом
 }
 
 .bet-button {
-  width: 256px;
-  height: 51px;
-  border: 1px solid #fff;
-  color: #fff;
-  font-weight: 500px;
-  font-size: 22px;
   text-transform: uppercase;
   background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 22px;
+  padding: 12px;
 }
 
 .overlay {
   position: absolute;
   inset: 0;
-  width: 100%;
   opacity: 0.6;
   background-color: #000;
 }
@@ -168,80 +166,110 @@ header__address — для выравнивания блока с адресом
 /*
 lots — вся секция;
 lots__heading — заголовок секции;
-lots__card-list — список карточек;
+--lots__card-list — список карточек;
 lots__card-list-item — пункт списка карточек;
 !card-link — ссылка, обрамляющая карточку;
 card — карточка;
 card_type_film , card_type_book и card_type_picture — классы для фона каждой из карточек;
-verlay — такой класс уже есть в вашем коде;
+overlay — такой класс уже есть в вашем коде;
 card__title — заголовок карточки;
 card__text — текст карточки;
 lots__look-more-link — ссылка «Посмотреть больше».*/
 
-.lots {
-  min-height: 723px;
-  padding: 180px 24px 120px;
+
+.lots { 
+  padding: 180px 24px 120px; 
 }
 
 .lots__heading {
   margin-bottom: 27px;
   margin-left: 40px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;;
   font-weight: bold;
   font-size: 40px;
   text-transform: uppercase;
 }
 
-.lots__card-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
+/**********************************************************************************/
+/*.lots__card-list-item,
+.card-link, .card .card__title,  
+.lots__card-list,.lots__look-more-link
+{
+  text-decoration:none;
+  font-style:normal;
   list-style: none;
-}
+  border-bottom:1px,solid,#000;
+ }*/
 
 .lots__card-list-item {
-  position: relative;
   width: 334px;
-  height: 596px;
+  min-height: 596px;
+ }
+
+.lots__card-list {
+  display: flex;
+  gap: 25px; 
+  height: 100%;
+  width: 100%;  
 }
+
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;  
+  padding: 48px 40px;
+
+}
+
+.card__title {
+  z-index: 1;
+  font-size: 22px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 1.5px;
+  
+}
+
+.card__text {
+  display: block;
+  z-index: 1;
+  font-size: 20px;
+  line-height: 1.2;
+  font-family: "Raleway", sans-serif;
+  
+ }
 
 .card_type_film,
 .card_type_book,
 .card_type_picture {
-  height: 596px;
-  object-fit: cover;
-  background-size: contain;
+ position: absolute;
+ inset: 0;
+ object-fit: cover; 
+ height: 100%;
+ width: 100%;
 }
 
-.card__title {
-  position: absolute;
-  inset: 48px 40px;
-  z-index: 1;
-  font-size: 22px;
-  line-height: 1.2;
-  text-decoration: underline;
-  text-transform: uppercase;
-}
-
-.card__text {
-  position: absolute;
-  right: 40px;
-  bottom: 48px;
-  left: 40px;
-  z-index: 1;
-  font-size: 20px;
-  line-height: 1, 2;
-}
-
+/*****************************************************************************************/
 .lots__look-more-link {
   display: inline-block;
-  margin: 30px 40px;
-  border-bottom: 1px solid black;
+  margin-left: 40px;
+  margin-top: 30px;
   font-family: "Raleway", sans-serif;
-  font-weight: normal;
   font-size: 20px;
-  text-decoration: none;
 }
+
+.lots a {
+  text-decoration: none;
+  font-style: normal;
+  border-bottom: 1px solid #000;  
+}
+
 
 /*---------------------------Аукцион-----------------------------------------------------------*/
 /*
@@ -327,13 +355,6 @@ footer__social-icon — иконка социальной сети.
   height: 360px;
   padding: 151.5px 50px 82px 51px;
   background-color: #fff;
-}
-
-.footer__address {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  font-size: 18px;
 }
 
 .footer__menu-list {
