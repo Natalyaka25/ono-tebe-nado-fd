@@ -296,7 +296,7 @@ about__text — блок для текстов (параграфов) секци
 
 .about__logo {
   position: relative;
-  grid-row: 1;
+  grid-row: 1/ span 2;
   justify-self: center;
   align-self: start;
   width: 240px;
@@ -307,6 +307,7 @@ about__text — блок для текстов (параграфов) секци
 }
 
 .about__title {
+  grid: 2/1;
   justify-self: start;
   align-self: center;
   margin-bottom: 75px;
@@ -318,6 +319,7 @@ about__text — блок для текстов (параграфов) секци
 }
 
 .about__text {
+  grid: 2/2;
   flex-wrap: wrap;
   align-content: start;
   padding-right: 24px;
