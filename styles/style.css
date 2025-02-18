@@ -1,12 +1,5 @@
 /* место для вашего кода */
 
-.content__text_white {
-  color: #fff;
-}
-
-.content__text_black {
-  color: #000;
-}
 /*----------------------------------------------Шапка------------------------------------------------------------*/
 /*
 header — вся шапка;
@@ -27,7 +20,7 @@ header__address — для выравнивания блока с адресом
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   padding: 93.16px 52.5px 94px 50px;
-  background-color: bisque;
+  background-color: #fff;;
 }
 
 .menu {
@@ -97,6 +90,7 @@ header .address {
   position: relative;
   min-height: 757px;
   padding: 165px 50px 50px;
+  color: #fff;
 }
 
 .cover__title {
@@ -143,7 +137,7 @@ header .address {
   align-items: center;
   align-content: center;
   gap: 110px;
-  margin-top: 105px;
+  margin-top: 106px;
 }
 
 .cover__description-text {
@@ -212,6 +206,7 @@ lots__look-more-link — ссылка «Посмотреть больше».*/
 .lots__card-list-item {
   width: 334px;
   min-height: 596px;
+  color: #fff;
 }
 
 .lots__card-list {
@@ -307,7 +302,7 @@ about__text — блок для текстов (параграфов) секци
 }
 
 .about__title {
-  grid: 2/1;
+  grid-column: 2;
   justify-self: start;
   align-self: center;
   margin-bottom: 75px;
@@ -319,8 +314,9 @@ about__text — блок для текстов (параграфов) секци
 }
 
 .about__text {
-  grid: 2/2;
   flex-wrap: wrap;
+  grid-column: 2;
+  grid-row: 2;
   align-content: start;
   padding-right: 24px;
   font-family: "Raleway", sans-serif;
@@ -359,7 +355,7 @@ footer__social-icon — иконка социальной сети.
   display: grid;
   grid-template-columns: 1fr 164px 1fr;
   gap: 100px;
-  height: 360px;
+  min-height: 360px;
   padding: 180px 50px 82px 51px;
   background-color: #fff;
 }
