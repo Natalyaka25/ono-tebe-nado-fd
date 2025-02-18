@@ -26,29 +26,33 @@ header__address — для выравнивания блока с адресом
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 93.16px 52.5px 95.19px 50px;
-  background-color: #fff;
+  padding: 93.16px 52.5px 94px 50px;
+  background-color:bisque;
 }
 
-.header__menu {
+.menu {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
 }
 
-.header__links-list {
+.menu-list {
   display: flex;
-  flex-wrap: nowrap;
   gap: 33px;
   list-style: circle;
 }
 
-.header__links-list-item_no-bullit {
-  list-style: none;
+.menu-list_active {
+  text-decoration: none;
+  list-style: none
 }
 
-.header__link {
-  border-bottom: 1px solid;
+.menu-link {
   text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+.links-list-item_no-bullit {
+  list-style: none;
 }
 
 .header__logo {
@@ -64,17 +68,20 @@ header__address — для выравнивания блока с адресом
   font-style: normal;
   font-size: 18px;
   line-height: 1.35;
+}
+
+header .address {
   width: 236px;
 }
 
 .address p {
-  font-style: normal;  
+  font-style: normal;
 }
 
 .address a {
   text-decoration: none;
   font-style: normal;
-  border-bottom: 1px solid #000;  
+  border-bottom: 1px solid #000;
 }
 
 /*-----------------------------Основной блок---------------------------------------------------------*/
@@ -163,6 +170,7 @@ header__address — для выравнивания блока с адресом
   opacity: 0.6;
   background-color: #000;
 }
+
 /*-----------------------------Карточки---------------------------------------------------------*/
 /*
 lots — вся секция;
@@ -177,15 +185,14 @@ card__title — заголовок карточки;
 card__text — текст карточки;
 lots__look-more-link — ссылка «Посмотреть больше».*/
 
-
-.lots { 
-  padding: 180px 24px 118px; 
+.lots {
+  padding: 180px 24px 118px;
 }
 
 .lots__heading {
   margin-bottom: 27px;
   margin-left: 40px;
-  font-family: "Raleway", sans-serif;;
+  font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 40px;
   text-transform: uppercase;
@@ -209,12 +216,11 @@ lots__look-more-link — ссылка «Посмотреть больше».*/
 
 .lots__card-list {
   display: flex;
-  gap: 25px; 
+  gap: 25px;
   height: 100%;
-  width: 100%;  
+  width: 100%; 
   flex-wrap: wrap;
 }
-
 
 .card {
   position: relative;
@@ -224,8 +230,6 @@ lots__look-more-link — ссылка «Посмотреть больше».*/
   height: 100%;
   justify-content: space-between;  
   padding: 48px 40px;
-  
-
 }
 
 .card__title {
@@ -236,7 +240,6 @@ lots__look-more-link — ссылка «Посмотреть больше».*/
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 1.5px;
-  
 }
 
 .card__text {
@@ -244,21 +247,21 @@ lots__look-more-link — ссылка «Посмотреть больше».*/
   z-index: 1;
   font-size: 20px;
   line-height: 1.2;
-  font-family: "Raleway", sans-serif;
-  
+  font-family: "Raleway", sans-serif;  
  }
 
 .card_type_film,
 .card_type_book,
 .card_type_picture {
- position: absolute;
- inset: 0;
- object-fit: cover; 
- height: 100%;
- width: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 /*****************************************************************************************/
+
 .lots__look-more-link {
   display: inline-block;
   margin-left: 40px;
@@ -270,9 +273,8 @@ lots__look-more-link — ссылка «Посмотреть больше».*/
 .lots a {
   text-decoration: none;
   font-style: normal;
-  border-bottom: 1px solid #000;  
+  border-bottom: 1px solid #000;
 }
-
 
 /*---------------------------Аукцион-----------------------------------------------------------*/
 /*
@@ -287,7 +289,7 @@ about__text — блок для текстов (параграфов) секци
 .about {
   display: grid;
   grid-template-columns: 334px 1fr;
-  column-gap: 25px ;
+  column-gap: 25px;
   padding:35px 24px 0px;
   background-color: #fff;
 }
@@ -297,7 +299,7 @@ about__text — блок для текстов (параграфов) секци
   grid-row: 1;
   justify-self: center;
   align-self: start;
-  width: 240px; 
+  width: 240px;
   height: 240px;
   background-size: contain;
   border-radius: 120px 120px;
@@ -316,17 +318,16 @@ about__text — блок для текстов (параграфов) секци
 }
 
 .about__text {
-  align-content: start ; 
+  align-content: start;
   padding-right: 24px;
   font-family: "Raleway", sans-serif;
   font-weight: normal;
   font-size: 20px;
   line-height: 1.2;
-  background-size: contain;
- 
+  flex-wrap: wrap;
 }
 
-.about__text p{
+.about__text p {
   margin-top: 24px;
 }
 
@@ -361,20 +362,16 @@ footer__social-icon — иконка социальной сети.
   background-color: #fff;
 }
 
-.footer__menu-list {
-  
-  font-size: 18px;
-  text-align: center;
-  list-style: none;
+.footer .address {
+justify-self: start;
 }
 
-.footer__menu-link {
-  display: flex;
-  justify-content: center;
+.footer .menu-list {
+  display: block;
 }
 
-.footer__menu-link_active {
-  text-decoration: none;
+.footer .menu-list-item { 
+  justify-self: center;
 }
 
 .footer__social-list {
