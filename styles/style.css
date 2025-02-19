@@ -235,7 +235,7 @@ lots__look-more-link — ссылка «Посмотреть больше».*/
   line-height: 1.2;
 }
 
-.card__img{
+.card__img {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -268,7 +268,7 @@ about__text — блок для текстов (параграфов) секци
 */
 
 .about {
-  display: grid; 
+  display: grid;
   grid-template-columns: 334px 693px;
   grid-template-rows: 96px 75px 1fr;
   column-gap: 25px;
@@ -276,7 +276,7 @@ about__text — блок для текстов (параграфов) секци
   background-color: #fff;
 } 
  
-.about__logo { 
+.about__logo {
   display: flex;
   grid-row: 1/4;
   justify-self: center;
@@ -287,7 +287,7 @@ about__text — блок для текстов (параграфов) секци
   background-color: #000;
 } 
  
-.about__title { 
+.about__title {
   grid-column: 2;
   grid-row: 2;
   align-self: start;
@@ -297,7 +297,7 @@ about__text — блок для текстов (параграфов) секци
   text-transform: uppercase;
 } 
  
-.about__text { 
+.about__text {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -312,7 +312,7 @@ about__text — блок для текстов (параграфов) секци
   line-height: 1.2;
 } 
  
-.about__text p { 
+.about__text p {
   margin-top: 24px;
 } 
  
